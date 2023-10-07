@@ -1,6 +1,12 @@
 #include <iostream>
+#include "Logger.h"
+
+using namespace logger;
 
 int main(int argc, char** argv) 
 {
-	puts("Hello, world!");
+	Logger logger;
+	logger.identifier = "test";
+
+	logger.info("hjsd");
 }
